@@ -4,24 +4,24 @@ date_default_timezone_set("America/La_Paz");
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="init">
 $debug = true;
-$sistema = "/condominios-avalor.com.ve/";
+$sistema = "/";
 $email_error = FALSE;
 $mostrar_error = true;
 
 // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="Cheqeuo servidor">
 if ($_SERVER['SERVER_NAME'] == "www.condominios-avalor.com.ve" || $_SERVER['SERVER_NAME'] == "condominios-avalor.com.ve") {
-    $user = "valoriza2_ava";
-    $password = "avalor5231";
-    $db = "valoriza2_avalor";
+    $user = "";
+    $password = "";
+    $db = "";
     $email_error = true;
     $mostrar_error = false;
     $debug = false;
     $sistema = "/";
 } else {
-    $user = "valoriza2_ava";
-    $password = "avalor5231";
-    $db = "valoriza2_avalor";
+    $user = "";
+    $password = "";
+    $db = "";
 }
 
 // </editor-fold>
@@ -106,8 +106,8 @@ define("ARCHIVO_EDO_CTA_INM","EDO_CUENTA_INMUEBLE.txt");
 define("ARCHIVO_ACTUALIZACION","ACTUALIZACION.txt");
 define("SMTP_SERVER","mail.condominios-avalor.com.ve");                                 
 define("PORT",25);
-define("USER_MAIL","info@condominios-avalor.com.ve");
-define("PASS_MAIL","Avalor5231");
+define("USER_MAIL","");
+define("PASS_MAIL","");
 define("MESES_COBRANZA",400);
 define("GRAFICO_FACTURACION",1);
 define("GRAFICO_COBRANZA",1);
